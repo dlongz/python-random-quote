@@ -1,3 +1,5 @@
+import random
+
 def quotes():
   #print("Keep it logically awesome.")
 
@@ -5,7 +7,9 @@ def quotes():
   quotes = f.readlines()
   f.close()
 
-  print(quotes[0])
+  last = 13
+  rdm = random.randint(0,last)
+  print(quotes[rdm])
 
 if __name__== "__main__":
   quotes()
